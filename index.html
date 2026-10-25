@@ -86,6 +86,14 @@ a{color:inherit}
 .plan li{display:grid;grid-template-columns:70px 1fr;gap:14px;padding:12px 0;border-bottom:1.5px solid color-mix(in srgb,currentColor 35%,transparent)}
 .plan a.go{color:inherit;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px;text-decoration-color:color-mix(in srgb,currentColor 45%,transparent)}
 .plan a.go:hover{text-decoration-color:currentColor}
+.cast{margin-top:18px;border-top:3px solid currentColor;padding-top:14px;display:flex;flex-direction:column;gap:10px}
+.cast h3{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(30px,8vw,44px);line-height:.9;margin:0}
+.cast p{margin:0;font-size:15px}
+.cast ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}
+.cast li{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start;background:rgba(13,13,15,.08);padding:10px 12px;min-width:0}
+.cast .who{font-family:var(--marker);font-size:15px;background:var(--ink);color:var(--pink);padding:2px 8px;transform:rotate(-3deg);white-space:nowrap}
+.cast li b{display:block;font-weight:800;text-transform:uppercase;font-size:15px;letter-spacing:.02em}
+.cast li span:not(.who){display:block;font-size:14px;opacity:.9}
 .plan .t{font-family:var(--display);font-size:24px;line-height:1.05;font-variant-numeric:tabular-nums}
 .plan .w{min-width:0}
 .plan strong{font-weight:800;font-size:17px;text-transform:uppercase;letter-spacing:.02em;display:block}
@@ -177,8 +185,21 @@ a{color:inherit}
       <ol class="plan">
         <li><span class="t">15:58</span><div class="w"><strong>Ankunft Berlin Südkreuz</strong><small>ICE 1206 aus Jenbach. Theresa holt euch am Gleis ab.</small></div></li>
         <li><span class="t">16:45</span><div class="w"><strong>Gemütlich ankommen</strong><small><a class="go" href="https://www.google.com/maps/search/?api=1&query=Die%20Tierversicherer%20Danneckerstra%C3%9Fe%20Berlin" target="_blank" rel="noopener">Danneckerstraße, Friedrichshain<span aria-hidden="true"> ↗</span></a></small></div></li>
-        <li><span class="t">18:00</span><div class="w"><strong>Krimi-Dinner (Pizza/Pasta)</strong><small>Jeder bekommt vorher eine Rolle, Verkleidung gern, aber kein Muss.</small></div></li>
+        <li><span class="t">18:00</span><div class="w"><strong>Krimi-Dinner (Chicken Nuggets, Pommes &amp; Pasta)</strong><small>Jeder bekommt vorher eine Rolle, Verkleidung gern, aber kein Muss.</small></div></li>
       </ol>
+      <div class="cast">
+        <h3>Mord im Berghotel</h3>
+        <p>Charity-Event im Schweizer Berghotel „Belle Mortelle“, nur mit der Seilbahn erreichbar. Jede Rolle ist absichtlich ein bisschen schräg.</p>
+        <ul>
+          <li><span class="who">Jan</span><div><b>Lucas Bloom (35)</b><span>Tech-Milliardär und Ehemann der Gastgeberin Maria Bloom. Sieht aus wie ein Computerfreak und wirkt nicht sehr sozial.</span></div></li>
+          <li><span class="who">Eva</span><div><b>Emma Rorschach (23)</b><span>Managerin des Hotels. Trotz ihres jungen Alters sehr resolut und energisch.</span></div></li>
+          <li><span class="who">Anna</span><div><b>Julianne Davis (31)</b><span>Weltberühmte Schauspielerin aus Liebeskomödien. Wunderschön, aber ein bisschen verpeilt.</span></div></li>
+          <li><span class="who">Aaron</span><div><b>Prinz Amir (33)</b><span>Stinkreich, verwöhnt und redet von sich am liebsten in der dritten Person.</span></div></li>
+          <li><span class="who">Alex</span><div><b>Bruno (24)</b><span>Der Hotelpage. Sehr langsam, viel zu gemütlich für seinen Job und furchtbar vergesslich.</span></div></li>
+          <li><span class="who">Fabi</span><div><b>Gary Thomson (42)</b><span>Der begehrteste Sternekoch der Welt, kocht fürs Charity-Event. Cholerisch und unausstehlich.</span></div></li>
+          <li><span class="who">Theresa</span><div><b>Lady Anne Davenport (33)</b><span>Englische Adelige, Gräfin von Cumberbatchshire. Wirkt sehr hochnäsig und zynisch.</span></div></li>
+        </ul>
+      </div>
     </article>
 
     <article class="poster p-mi">
